@@ -67,9 +67,9 @@
         <table class="table table-hover">
           <thead class="thead-light ">
             <tr>
-              <th scope="col">Nom Prénom | Elève <i class="fa fa-sort-asc"></i><br> </th>
-              <th scope="col">Date de Naissance <i class="fa fa-sort"></i></th>
-              <th scope="col">Genre <i class="fa fa-sort-desc"></i></th>
+              <th scope="col">Nom Prénom | Elève <!-- <i class="fa fa-sort-asc"></i>--><br> </th>
+              <th scope="col">Date de Naissance <!-- <i class="fa fa-sort"></i>--></th>
+              <th scope="col">Genre <!-- <i class="fa fa-sort-desc"></i>--></th>
               <th scope="col">Supprimer</th>
             </tr>
           </thead>

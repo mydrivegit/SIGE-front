@@ -45,24 +45,24 @@
               <th class="text-nowrap" scope="col">Nom Prénom</th>
               <th class="text-nowrap" scope="col">Date de naissance</th>
               <th scope="col">Age</th>
-              <th scope="col">
-                <select id='searchText' style='display:inline-block' onchange='searchText()'>
+              <th scope="col">Role
+                <!-- <select id='searchText' style='display:inline-block' onchange='searchText()'>
                   <option disabled selected>Role</option>
                   <option value='Responsable de élève'>Responsable de élève</option>
                   <option value='Elève'>Elève</option>
                   <option value='Enseignant'>Enseignant</option>
                   <option value='all'>Tout</option>
-                </select>
+                </select> -->
                 </th>
               <th scope="col">Genre</th>
-              <th scope="col">
-                <select id='searchText1' style='display:inline-block' onchange='searchText1()'>
+              <th scope="col">Classe
+                <!-- <select id='searchText1' style='display:inline-block' onchange='searchText1()'>
                   <option disabled selected>Classe</option>
                   <option value='Coran Niv1'>Coran Niv1</option>
                   <option value='Arabe Rawdati'>Arabe Rawdati</option>
                   <option value='Coran Niv2'>Coran Niv2</option>
                   <option value='all'>Tout</option>
-                </select>
+                </select> -->
                 </th>
               <!-- <th scope="col">Statut</th> -->
               <th scope="col">Détail /Modifier</th>
@@ -196,7 +196,9 @@ export default {
             this.sendEmail.emails = ''
             this.sendEmail.title = ''
             this.sendEmail.content = ''
-            window.location.reload()
+            setTimeout(() => {
+              window.location.reload()
+            }, 3000)
           }
         })
         .catch(err => {

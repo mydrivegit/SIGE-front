@@ -19,8 +19,7 @@
               <select v-model="student.class"  class="form-control is-valid"
               placeholder="Classe" required>
               <option disabled value='null'>Sélectionnez la classe......</option>
-              <option>Coran Niv1</option>
-              <option>Coran Niv2</option>
+              <option v-for="item in classes" :key="item._id" v-show="item.status">{{item.name}} {{item.code}} </option>
             </select>
             </div>
             <div class="col-md-4" >
@@ -132,10 +131,11 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['members']),
+    ...mapGetters(['members', 'classes']),
     ...mapActions([('fetchMembersList')])
   },
   created () {
+    this.$store.dispatch('fetchClassesList')
     return this.fetchMembersList
   }
 }

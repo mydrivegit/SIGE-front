@@ -52,9 +52,9 @@
         <table class="table table-hover">
           <thead class="thead-light ">
             <tr>
-              <th scope="col">Nom Prénom | Elève <i class="fa fa-sort-asc"></i><br> </th>
-              <th scope="col">Date de Naissance <i class="fa fa-sort"></i></th>
-              <th scope="col">Genre <i class="fa fa-sort-desc"></i></th>
+              <th scope="col">Nom Prénom | Elève <!-- <i class="fa fa-sort-asc"></i> --><br> </th>
+              <th scope="col">Date de Naissance <!-- <i class="fa fa-sort"></i> --></th>
+              <th scope="col">Genre <!-- <i class="fa fa-sort-desc"></i> --></th>
               <th scope="col">Supprimer</th>
             </tr>
           </thead>
@@ -78,13 +78,13 @@
           <thead class="thead-light ">
             <tr>
               <th scope="col">Matière
-                <i class="fa fa-sort-asc"></i>
+                <!-- <i class="fa fa-sort-asc"></i> -->
                 <br> </th>
               <th scope="col">Date d'ajout
-                <i class="fa fa-sort"></i>
+                <!-- <i class="fa fa-sort"></i> -->
               </th>
               <th scope="col">Statut
-                <i class="fa fa-sort-desc"></i>
+                <!-- <i class="fa fa-sort-desc"></i> -->
               </th>
               <th scope="col">Suppprimer
               </th>

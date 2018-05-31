@@ -40,7 +40,7 @@ export default {
         .then(res => {
           if (res.data) {
             this.$swal('Utilisateur activé avec succès')
-            window.location.reload()
+            this.$router.push({name: 'listOfUser'})
           }
         })
         .catch(err => {

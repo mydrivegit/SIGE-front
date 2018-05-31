@@ -41,7 +41,7 @@
                   <option value='all'>Tout</option>
                 </select>
                 </th>
-              <th scope="col">Type <i class="fa fa-sort-desc"></i>
+              <th scope="col">Type <!-- <i class="fa fa-sort-desc"></i> -->
               </th>
               <th class="text-nowrap" scope="col">Date Inscriptions</th>
             </tr>

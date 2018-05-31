@@ -28,8 +28,8 @@
           <thead class="thead-light">
             <tr class="align-text-bottom">
               <th class="text-nowrap" scope="col">Code</th>
-              <th class="text-nowrap" scope="col">Matière <i class="fa fa-sort-asc"></i></th>
-              <th class="text-nowrap" scope="col">Date d'ajout <i class="fa fa-sort"></i></th>
+              <th class="text-nowrap" scope="col">Matière <!-- <i class="fa fa-sort-asc"></i> --></th>
+              <th class="text-nowrap" scope="col">Date d'ajout <!-- <i class="fa fa-sort"></i> --></th>
               <th class="text-nowrap" scope="col">Statut</th>
               <th class="text-nowrap" scope="col"><i class="fa fa-pencil" aria-hidden="true"></i> / <i class="fa fa-eye"></i> </th>
             </tr>
@@ -38,7 +38,7 @@
             <tr class="content">
               <td>{{subjectId.code}}</td>
               <td>{{subjectId.name}}</td>
-              <td>{{subjectId.addedDate}}</td>
+              <td>{{moment(subjectId.addedDate).format('L')}}</td>
               <td><div v-if="subjectId.status">Active</div>
               <div v-else>Terminée</div></td>
               <td class="text-nowrap" @click="viewDetails(subjectId._id)">

@@ -4,7 +4,7 @@ import router from './../router'
 //  Axios Global Configration
 
 let http = axios.create({
-  baseURL: 'https://sigeecoleback.herokuapp.com/'
+  baseURL: 'https://sigeecoleback.herokuapp.com/' || 'http://localhost:3000'
 })
 
 http.interceptors.request.use((config) => {

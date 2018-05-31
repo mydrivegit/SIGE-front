@@ -129,7 +129,9 @@ export default {
         .then(res => {
           if (res.data) {
             this.$swal('User details altered Succesfully')
-            window.location.reload()
+            setTimeout(() => {
+              window.location.reload()
+            }, 3000)
           }
         })
         .catch(err => {

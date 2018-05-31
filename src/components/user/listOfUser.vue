@@ -42,7 +42,7 @@ export default {
         .then(res => {
           if (res.data) {
             this.$swal('Utilisateur desactivé avec succès')
-            window.location.reload()
+            this.$router.push({name: 'listOfNonActiveUser'})
           }
         })
         .catch(err => {

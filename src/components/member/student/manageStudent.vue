@@ -20,8 +20,7 @@
               <select v-model="student.class"  class="form-control is-valid"
               data-toggle="tooltip" data-placement="bottom" title="Classe" required>
               <option disabled value='null'>Sélectionnez la classe......</option>
-              <option>Coran Niv1</option>
-              <option>Coran Niv2</option>
+              <option v-for="item in classes" :key="item._id" v-show="item.status">{{item.name}} {{item.code}} </option>
             </select>
             </div>
             <div class="col-md-4" >
@@ -93,9 +92,9 @@
         <table class="col table table-striped table-hover mb-0">
           <thead class="thead-light">
             <tr class="text-left col">
-              <th style="width: 20vh" scope="col" >Absence <i class="fa fa-sort-asc"></i></th>
-              <th style="width: 20vh" scope="col">Date <i class="fa fa-sort"></i></th>
-              <th style="width: 20vh" scope="col">Matière <i class="fa fa-sort"></i></th>
+              <th style="width: 20vh" scope="col" >Absence <!-- <i class="fa fa-sort-asc"></i> --></th>
+              <th style="width: 20vh" scope="col">Date <!-- <i class="fa fa-sort"></i> --></th>
+              <th style="width: 20vh" scope="col">Matière <!-- <i class="fa fa-sort"></i> --></th>
               <!-- <th style="width: 20vh" scope="col">Notification <i class="fa fa-sort"></i></th> -->
               <!--style="width: 30%"  <th scope="col">Date de Notification <i class="fa fa-sort-desc"></i></th> -->
               <th style="width: 40vh" scope="col">Commentaire </th>
@@ -121,10 +120,10 @@
         <table class="col table  table-striped table-hover">
           <thead class="thead-light">
             <tr class="text-left">
-              <th scope="col">Classe   <i class="fa fa-sort-asc"></i></th>
-              <th scope="col">Code <i class="fa fa-sort"></i></th>
-              <th scope="col">Année Scolaire <i class="fa fa-sort"></i></th>
-              <th scope="col">Statut <i class="fa fa-sort-desc"></i></th>
+              <th scope="col">Classe  <!-- <i class="fa fa-sort-asc"></i> --></th>
+              <th scope="col">Code <!-- <i class="fa fa-sort"></i> --></th>
+              <th scope="col">Année Scolaire <!-- <i class="fa fa-sort"></i> --></th>
+              <th scope="col">Statut <!-- <i class="fa fa-sort-desc"></i> --></th>
             </tr>
           </thead>
           <tbody v-for="classDetails in memberInClass" :key="classDetails._id">
@@ -175,7 +174,8 @@ export default {
       student: 'memberId',
       members: 'members',
       memberInClass: 'memberInClass',
-      attMemberId: 'attMemberId'
+      attMemberId: 'attMemberId',
+      classes: 'classes'
     }),
     ...mapActions([('fetchMembersList')])
   },
@@ -183,6 +183,7 @@ export default {
     this.$store.dispatch('fetchMemberId', this.$route.params.memberId)
     this.$store.dispatch('fetchClassDetailsOfMember', this.$route.params.memberId)
     this.$store.dispatch('fetchAttMemberId', this.$route.params.memberId)
+    this.$store.dispatch('fetchClassesList')
     return this.fetchMembersList
   }
 }

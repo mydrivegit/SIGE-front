@@ -6,12 +6,12 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "node server.js",
+    "start": "npm run dev",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run e2e",
     "lint": "eslint --ext .js,.vue src test/e2e/specs",
     "build": "node build/build.js",
-    "postinstall": "npm run build --aot --target=prodiuction"
+    "postinstall": "npm build --aot --target=prodiuction"
   },
   "dependencies": {
     "@sendgrid/mail": "^6.2.1",

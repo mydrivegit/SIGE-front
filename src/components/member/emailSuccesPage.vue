@@ -1,9 +1,9 @@
 <template>
-  <div class="card">
+  <div class="card cardInEmailSP">
     <div class="card-text"> Votre message a été envoyé avec succès! </div>
     <a @click="movetoonepage"
     role="buttton"
-    class="btn btn-sm btn-secondary cursor align-self-center">
+    class="btn btn-sm btn-secondary cursor">
     Retourner
     </a>
   </div>
@@ -20,8 +20,8 @@ export default {
 }
 </script>
 
-<style scoped>
-.card {
+<style>
+.cardInEmailSP {
   padding: 15vh;
 }
 </style>

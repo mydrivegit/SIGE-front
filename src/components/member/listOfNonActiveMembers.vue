@@ -191,11 +191,11 @@ export default {
       this.$store.dispatch('sendEmail', this.sendEmail)
         .then(res => {
           if (res.request.status === 200) {
-            this.$router.push({name: 'emailSuccesPage'})
             this.$swal('envoyer un e-mail aux membres sélectionnés')
-            this.sendEmail.emails = ''
-            this.sendEmail.title = ''
-            this.sendEmail.content = ''
+            this.$router.push({name: 'emailSuccesPage'})
+            // this.sendEmail.emails = ''
+            // this.sendEmail.title = ''
+            // this.sendEmail.content = ''
           }
         })
         .catch(err => {

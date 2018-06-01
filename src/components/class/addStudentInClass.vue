@@ -25,7 +25,7 @@
               </th>
               <th class="text-nowrap" scope="col">Nom Prénom</th>
               <th class="text-nowrap" scope="col">Date de naissance</th>
-              <th scope="col">Age</th>
+              <th scope="col">Âge</th>
               <th scope="col">Genre</th>
               <th scope="col">
                 <select id='searchText1' style='display:inline-block' onchange='searchText1()'>

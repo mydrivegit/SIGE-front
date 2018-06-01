@@ -5,9 +5,9 @@
     <table class="col table table-hover table-list-search " id="table_format">
       <thead class="thead-light">
         <tr class="align-text-bottom">
-          <th class="text-nowrap" scope="col">Username</th>
-          <th class="text-nowrap" scope="col">First Name</th>
-          <th class="text-nowrap" scope="col">Last Name</th>
+          <th class="text-nowrap" scope="col">Identifiant</th>
+          <th class="text-nowrap" scope="col">Prénom</th>
+          <th class="text-nowrap" scope="col">Nom</th>
           <th class="text-nowrap" scope="col">Activer l'utilisateur</th>
         </tr>
       </thead>

@@ -40,14 +40,14 @@
             <tr class="align-text-bottom">
               <th class="text-nowrap" scope="col">
                 <input v-model="selectAll" type="checkbox">
-                 Select All
+                 Ssélectionner tout
               </th>
               <th class="text-nowrap" scope="col">Nom Prénom</th>
               <th class="text-nowrap" scope="col">Date de naissance</th>
-              <th scope="col">Age</th>
-              <th scope="col">Role
+              <th scope="col">Âge</th>
+              <th scope="col">Rôle
                 <!-- <select id='searchText' style='display:inline-block' onchange='searchText()'>
-                  <option disabled selected>Role</option>
+                  <option disabled selected>Rôle</option>
                   <option value='Responsable de élève'>Responsable de élève</option>
                   <option value='Elève'>Elève</option>
                   <option value='Enseignant'>Enseignant</option>

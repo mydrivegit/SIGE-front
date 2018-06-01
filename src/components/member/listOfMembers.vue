@@ -229,4 +229,7 @@ export default {
   width: 100%;
   margin-bottom: 20px;
 }
+.modal-backdrop {
+  z-index: -1;
+}
 </style>

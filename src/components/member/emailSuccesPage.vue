@@ -1,13 +1,14 @@
 <template>
-  <div class="card cardInEmailSP">
-    <div class="card-text"> Votre message a été envoyé avec succès! </div>
-    <a @click="movetoonepage"
-    role="buttton"
-    class="btn btn-sm btn-secondary cursor">
-    Retourner
-    </a>
+  <div class="card align-items-center">
+    <div class="card-text form-group"> Votre message a été envoyé avec succès!</div>
+    <div class="col-md-2 col-lg-2 col-xl-2 col-sm-3 col-12 mb-5 form-group">
+      <button @click="movetoonepage"
+      role="buttton"
+      class="btn btn-sm btn-secondary form-control cursor">
+      Retourner
+      </button>
+    </div>
   </div>
-
 </template>
 
 <script>
@@ -16,12 +17,15 @@ export default {
     movetoonepage () {
       this.$router.go(-1)
     }
+  },
+  mounted () {
+    $('.modal-backdrop').removeClass('modal-backdrop')
   }
 }
 </script>
 
-<style>
-.cardInEmailSP {
+<style scoped>
+.card {
   padding: 15vh;
 }
 </style>

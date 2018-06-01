@@ -128,10 +128,7 @@ export default {
       this.$store.dispatch('modifyUserIdData', {data: this.users, id: this.$route.params.userId})
         .then(res => {
           if (res.data) {
-            this.$swal('User details altered Succesfully')
-            setTimeout(() => {
-              window.location.reload()
-            }, 3000)
+            this.$router.push({ name: 'userAlteredSuccessfully' })
           }
         })
         .catch(err => {

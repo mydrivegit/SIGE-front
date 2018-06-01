@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import login from '@/components/auth/login'
 import register from '@/components/user/register'
 import listOfUser from '@/components/user/listOfUser'
+import userAlteredSuccessfully from '@/components/user/userAlteredSuccessfully'
 import listOfNonActiveUser from '@/components/user/listOfNonActiveUser'
 import manageUser from '@/components/user/manageUser'
 import managePassword from '@/components/user/managePassword'
@@ -64,6 +65,13 @@ const router = new Router({
       name: 'listOfUser',
       components: {
         default: listOfUser, navbar, sidebar
+      }
+    },
+    {
+      path: '/userAlteredSuccessfully',
+      name: 'userAlteredSuccessfully',
+      components: {
+        default: userAlteredSuccessfully, navbar, sidebar
       }
     },
     {

@@ -6,8 +6,8 @@
       <thead class="thead-light">
         <tr class="align-text-bottom">
           <th class="text-nowrap" scope="col">Username</th>
-          <th class="text-nowrap" scope="col">First Name</th>
-          <th class="text-nowrap" scope="col">Last Name</th>
+          <th class="text-nowrap" scope="col">Prénom</th>
+          <th class="text-nowrap" scope="col">Nom</th>
           <th class="text-nowrap" scope="col">Voir les détails</th>
           <th class="text-nowrap" scope="col">Inactif</th>
         </tr>

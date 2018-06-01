@@ -66,7 +66,7 @@
                 <label  class="form-group font-weight-bold col-md-6 justify-content-start text-nowrap">Numéro de portable :</label>
                 <div class="form-group col-md-1">
                   <input v-if="show" v-model="users.mobileNo" class="form-control form-control-sm"
-                  placeholder="Numéro de portable" autofocus required/>
+                  placeholder="Numéro de portable" type="text" autofocus required/>
                   <div v-else type="text">{{users.mobileNo}}</div>
                 </div>
               </div>

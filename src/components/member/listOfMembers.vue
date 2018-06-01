@@ -198,9 +198,6 @@ export default {
             // this.sendEmail.emails = ''
             // this.sendEmail.title = ''
             // this.sendEmail.content = ''
-            setTimeout(() => {
-              window.location.reload()
-            }, 3000)
           }
         })
         .catch(err => {

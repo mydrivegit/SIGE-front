@@ -19,7 +19,7 @@
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <a class="dropdown-item cursor" data-toggle="collapse" data-target=".navbar-collapse.show" tag="li"
-          @click="viewDetails (users._id)" >Profile</a>
+          @click="viewDetails (users._id)" >Profil</a>
           <router-link v-if="users.role" class="dropdown-item cursor" data-toggle="collapse"
         data-target=".navbar-collapse.show" tag="li" :to="{name: 'listOfUser'}">
         Liste des utilisateurs actifs</router-link>
@@ -30,7 +30,7 @@
         data-target=".navbar-collapse.show" tag="li" :to="{name: 'listOfNonActiveMembers'}">
         Liste des Membres inactifs</router-link>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item cursor" @click="logout">Log Out</a>
+          <a class="dropdown-item cursor" @click="logout">Déconnexion</a>
         </div>
       </li>
     </ul>

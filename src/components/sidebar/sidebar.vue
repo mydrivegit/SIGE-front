@@ -4,8 +4,8 @@
     <div class="sidebar-wrapper" >
       <ul class="sidebar-nav"  style="margin-left:0;">
         <li @click="toggled = !toggled" class="sidebar-brand cursor">
-            <a  style="margin-top:20px;float:right;">
-              <i aria-hidden="true"  class="fa fa-bars" style="font-size:20px color: #999999; !Important;"></i>
+            <a  style="margin-top:20px; float:right;  color:  #fff;">
+              <i aria-hidden="true"  class="fa fa-bars" style="font-size:20px !Important;  color:  #fff;"></i>
             </a>
         </li>
         <li>

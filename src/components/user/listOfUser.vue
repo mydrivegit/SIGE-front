@@ -17,7 +17,7 @@
           <td>{{user.username}}</td>
           <td>{{user.firstname}}</td>
           <td>{{user.lastname}}</td>
-          <td><button class="btn btn-secondary" @click="viewDetails(user._id)">Vue</button></td>
+          <td><button class="btn btn-secondary" @click="viewDetails(user._id)">Voir</button></td>
           <td><button class="btn btn-secondary" @click="changeUserStatus(user._id)">Utilisateur inactif</button></td>
         </tr>
         </tbody>

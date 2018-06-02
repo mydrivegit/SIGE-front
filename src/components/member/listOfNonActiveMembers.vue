@@ -39,8 +39,7 @@
           <thead class="thead-light">
             <tr class="align-text-bottom">
               <th class="text-nowrap" scope="col">
-                <input v-model="selectAll" type="checkbox">
-                 Ssélectionner tout
+                <input v-model="selectAll" type="checkbox">Tout
               </th>
               <th class="text-nowrap" scope="col">Nom Prénom</th>
               <th class="text-nowrap" scope="col">Date de naissance</th>

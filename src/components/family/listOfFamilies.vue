@@ -31,15 +31,15 @@
               <th class="text-nowrap" scope="col">Nom Responsable</th>
               <th class="text-nowrap" scope="col">Code</th>
               <th class="text-nowrap" scope="col">Année Scolaire</th>
-              <th scope="col">
-                <select id='filterText' style='display:inline-block' onchange='filterText()'>
+              <th scope="col">Statut
+                <!-- <select id='filterText' style='display:inline-block' onchange='filterText()'>
                   <option disabled selected>Statut</option>
                   <option value='Validée'>Validée</option>
                   <option value='Attente Paiement'>Attente Paiement</option>
                   <option value='Attente Document'>Attente Document</option>
                   <option value='Terminée'>Terminée</option>
                   <option value='all'>Tout</option>
-                </select>
+                </select> -->
                 </th>
               <th scope="col">Type <!-- <i class="fa fa-sort-desc"></i> -->
               </th>

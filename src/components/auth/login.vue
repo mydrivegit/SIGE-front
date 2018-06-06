@@ -2,6 +2,7 @@
  <div class="my-login-page">
       <div class="card-wrapper">
         <div class="brand">
+          <img style="margin:5px;" src="@/assets/logoSimplon.png">
         </div>
       <div class="card fat col-11">
         <div class="card-body">

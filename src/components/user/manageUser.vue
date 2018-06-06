@@ -40,10 +40,10 @@
             </div>
             <div class="form-group">
               <div class="form-inline">
-                <label  class="form-group font-weight-bold col-md-6 justify-content-start text-nowrap">E-Mail Adress :</label>
+                <label  class="form-group font-weight-bold col-md-6 justify-content-start text-nowrap">E-Mail Adresse :</label>
                 <div class="form-group col-md-2">
                   <input v-if="show" v-model="users.email" type="email" class="form-control form-control-sm"
-                  placeholder="E-Mail Adress" autofocus required/>
+                  placeholder="l'Adresse E-Mail" autofocus required/>
                   <div v-else type="text">{{users.email}}</div>
                 </div>
               </div>

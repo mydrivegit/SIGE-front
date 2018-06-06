@@ -1,7 +1,7 @@
 <template>
 <div class="container ins-container col-10" >
   <h4 class="text-nowrap text-center w-100 mb-5 form-control-sm heading">
-    <strong>Responsable de Élève</strong>
+    <strong>Responsable d'Élève</strong>
   </h4>
     <form @submit.prevent="modify">
       <div class="form-row">

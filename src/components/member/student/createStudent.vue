@@ -73,7 +73,7 @@
           <div class="form-row mb-4">
             <div class="col-md-4">
               <label class="col-form-label font-weight-bold">Adresse</label>
-              <input v-model="student.address" type="text" class="form-control is-valid" placeholder="Adress" required>
+              <input v-model="student.address" type="text" class="form-control is-valid" placeholder="Adresse" required>
             </div>
             <div class="col-md-4">
               <label class="col-form-label font-weight-bold">Code postal</label>

@@ -11,37 +11,37 @@
         <li>
           <router-link class="cursor" tag="a" :to="{name: 'listOfMembers'}">
             <i aria-hidden="true" class="fa fa-user"></i>
-            <span style="margin-left:1px;">Membres</span>
+            <span style="margin-left:-14px;">Membres</span>
           </router-link>
         </li>
         <li>
           <router-link class="cursor" tag="a" :to="{name: 'listOfFamilies'}">
             <i aria-hidden="true" class="fa fa-edit"></i>
-            <span style="margin-left:1px;">Inscription</span>
+            <span style="margin-left:-14px;">Inscription</span>
           </router-link>
         </li>
         <li>
           <router-link class="cursor" tag="a" :to="{name: 'listOfClass'}">
             <i aria-hidden="true" class="fa fa-file-text"></i>
-            <span style="margin-left:1px;">Classes</span>
+            <span style="margin-left:-14px;">Classes</span>
           </router-link>
         </li>
         <li>
           <router-link class="cursor" tag="a" :to="{name: 'listOfSubject'}">
             <i aria-hidden="true" class="fa fa-tachometer"></i>
-            <span style="margin-left:1px;">Matières</span>
+            <span style="margin-left:-14px;">Matières</span>
           </router-link>
         </li>
         <!-- <li>
           <router-link class="cursor" tag="a" :to="{name: 'notes'}">
             <i aria-hidden="true" class="fa fa-comment-o"></i>
-            <span style="margin-left:1px;">Notes</span>
+            <span style="margin-left:-14px;">Notes</span>
           </router-link>
         </li> -->
         <li>
-          <router-link class="cursor" tag="a" :to="{name: 'register'}">
+          <router-link v-if="user.role == 'Admin'" class="cursor" tag="a" :to="{name: 'register'}">
             <i aria-hidden="true" class="fa fa-book"></i>
-            <span style="margin-left:1px;">Registration</span>
+            <span style="margin-left:-14px;">Enregistrement</span>
           </router-link>
         </li>
       </ul>
@@ -54,10 +54,19 @@
 export default {
   data () {
     return {
+      user: [],
       toggled: false
     }
   },
-  methods: {
+  created () {
+    this.$store.dispatch('fetchUser')
+      .then(res => {
+        this.user = res.data.content['0']
+      })
+      .catch((err) => {
+        this.$router.push({ name: 'login' })
+        console.log(err)
+      })
   }
 }
 </script>

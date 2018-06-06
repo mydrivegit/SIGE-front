@@ -68,13 +68,13 @@
           <div class="form-row">
             <div class="col-md-12">
               <label class="col-form-label  font-weight-bold">Email</label>
-              <input v-model="student.email" type="email" class="form-control is-valid" data-toggle="tooltip" data-placement="bottom" title="Adress Email" required>
+              <input v-model="student.email" type="email" class="form-control is-valid" data-toggle="tooltip" data-placement="bottom" title="l'Adresse Email" required>
             </div>
           </div>
           <div class="form-row mb-4">
             <div class="col-md-4">
               <label class="col-form-label  font-weight-bold">Adresse</label>
-              <input v-model="student.address" type="text" class="form-control is-valid" data-toggle="tooltip" data-placement="bottom" title="Adress" required>
+              <input v-model="student.address" type="text" class="form-control is-valid" data-toggle="tooltip" data-placement="bottom" title="Adresse" required>
             </div>
             <div class="col-md-4">
               <label class="col-form-label  font-weight-bold">Code postal</label>

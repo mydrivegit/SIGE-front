@@ -14,6 +14,7 @@ import manageAttendence from '@/components/member/student/manageAttendence'
 import attendenceSheetParticular from '@/components/member/student/attendenceSheetParticular'
 import listOfMembers from '@/components/member/listOfMembers'
 import emailSuccesPage from '@/components/member/emailSuccesPage'
+import emailFaliurePage from '@/components/member/emailFaliurePage'
 import listOfNonActiveMembers from '@/components/member/listOfNonActiveMembers'
 import manageStudent from '@/components/member/student/manageStudent'
 import createProf from '@/components/member/professor/createProf'
@@ -114,6 +115,13 @@ const router = new Router({
       name: 'emailSuccesPage',
       components: {
         default: emailSuccesPage, navbar, sidebar
+      }
+    },
+    {
+      path: '/emailFaliurePage',
+      name: 'emailFaliurePage',
+      components: {
+        default: emailFaliurePage, navbar, sidebar
       }
     },
     {

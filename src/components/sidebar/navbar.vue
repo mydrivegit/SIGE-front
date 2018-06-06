@@ -15,18 +15,18 @@
     <ul class="navbar-nav mr-end">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-uppercase text-nowrap" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          {{users.username}}
+          {{user.username}}
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <a class="dropdown-item cursor" data-toggle="collapse" data-target=".navbar-collapse.show" tag="li"
-          @click="viewDetails (users._id)" >Profil</a>
-          <router-link v-if="users.role" class="dropdown-item cursor" data-toggle="collapse"
+          @click="viewDetails (user._id)" >Profil</a>
+          <router-link v-if="user.role == 'Admin'" class="dropdown-item cursor" data-toggle="collapse"
         data-target=".navbar-collapse.show" tag="li" :to="{name: 'listOfUser'}">
         Liste des utilisateurs actifs</router-link>
-          <router-link v-if="users.role" class="dropdown-item cursor" data-toggle="collapse"
+          <router-link v-if="user.role == 'Admin'" class="dropdown-item cursor" data-toggle="collapse"
         data-target=".navbar-collapse.show" tag="li" :to="{name: 'listOfNonActiveUser'}">
         Liste des utilisateurs inactifs</router-link>
-          <router-link v-if="users.role" class="dropdown-item cursor" data-toggle="collapse"
+          <router-link v-if="user.role == 'Admin'" class="dropdown-item cursor" data-toggle="collapse"
         data-target=".navbar-collapse.show" tag="li" :to="{name: 'listOfNonActiveMembers'}">
         Liste des Membres inactifs</router-link>
           <div class="dropdown-divider"></div>
@@ -42,16 +42,13 @@
 export default {
   data () {
     return {
-      users: [],
-      data: {
-        Admin: 'ture'
-      }
+      user: []
     }
   },
   created () {
     this.$store.dispatch('fetchUser')
       .then(res => {
-        this.users = res.data.content['0']
+        this.user = res.data.content['0']
       })
       .catch((err) => {
         this.$router.push({ name: 'login' })

@@ -5,7 +5,7 @@
       <div class="card fat">
         <div class="card-body">
           <h4 class="card-title text-center">
-              Enregistrer un membre
+              Inscrire d'utilisateur
           </h4>
           <form @submit.prevent="register">
             <div class="form-group">
@@ -21,8 +21,8 @@
               <input class="form-control form-control-sm" v-model="user.firstname" placeholder="Prénom" type="text" required>
             </div>
             <div class="form-group">
-              <label for="email" class="sr-only">E-Mail Adress</label>
-              <input class="form-control form-control-sm" v-model="user.email" placeholder="E-Mail Adress" type="email" required>
+              <label for="email" class="sr-only">E-Mail Adresse</label>
+              <input class="form-control form-control-sm" v-model="user.email" placeholder="E-Mail Adresse" type="email" required>
             </div>
             <div class="form-group">
               <label for="role" class="sr-only">Rôle</label>
@@ -37,11 +37,11 @@
               <input class="form-control form-control-sm" v-model="user.mobileNo" placeholder="Numéro de portable" type="number" required>
             </div>
             <div class="form-group">
-              <label for="password" class="sr-only">Password</label>
-              <input class="form-control form-control-sm" type="password" v-model="user.password" placeholder="Password" required>
+              <label for="password" class="sr-only">Mot de passe</label>
+              <input class="form-control form-control-sm" type="password" v-model="user.password" placeholder="Mot de passe" required>
             </div>
             <div class="form-group no-margin">
-                <button class="btn btn-secondary btn-block">Register</button>
+                <button class="btn btn-secondary btn-block">S'inscrire</button>
             </div>
           </form>
         </div>

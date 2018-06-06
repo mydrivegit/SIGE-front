@@ -99,7 +99,7 @@ export default {
         .then(res => {
           if (res.status === 201) {
             this.$router.push({name: 'listOfMembers'})
-            this.$swal('Responsable de Élève ' + this.inCharge.lastname + ' est créé avec succès')
+            this.$swal('Responsable d\'Élève ' + this.inCharge.lastname + ' est créé avec succès')
           }
         })
         .catch(err => {

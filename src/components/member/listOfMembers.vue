@@ -29,7 +29,7 @@
                 Enseignant
                 </router-link>
                 <router-link class="cursor dropdown-item" tag="a" :to="{name: 'createInCharge'}">
-                Responsable de élève
+                Responsable d'Élève
                 </router-link>
             </div>
           </div>
@@ -47,7 +47,7 @@
               <th scope="col">Rôle
                 <!-- <select id='searchText' style='display:inline-block' onchange='searchText()'>
                   <option disabled selected>Rôle</option>
-                  <option value='Responsable de élève'>Responsable de élève</option>
+                  <option value='Responsable d'Élève'>Responsable d'Élève</option>
                   <option value='Elève'>Elève</option>
                   <option value='Enseignant'>Enseignant</option>
                   <option value='all'>Tout</option>
